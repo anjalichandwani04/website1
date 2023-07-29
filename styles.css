@@ -1,0 +1,287 @@
+h1{
+    color : brown;
+}
+
+h2{
+    color : brown
+}
+
+
+.background{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/57609def37013b5169612da8/1557190263303-P5ASGQM897IPUNJ8V5ND/2019-05-02%2B09.30.20%2B1.jpg?format=1000w); 
+    background-size: cover;   
+    filter: blur(4px);
+    transform: scale(1.1);
+    z-index: -1;        
+}
+
+
+.login-popup{
+    visibility: hidden;
+
+}
+
+.loginbutton{
+    
+    position: fixed;
+    background: transparent;
+    width: 100px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    float: right;
+    text-align: center;
+    cursor: pointer;   
+}
+
+.signup-popup{
+    visibility: hidden;
+}
+
+.signupbutton{
+    position: fixed;
+    background:transparent;
+    width: 100px;
+    top:10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signup-button{
+    background: bisque;
+    width: 200px;
+    padding: 10px;
+
+}
+
+
+.button2{
+
+    position: fixed;
+    width:120px;
+    height: 200px;
+    background-color: brown;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    top:55%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+
+}
+
+.button2:hover{
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+.button3{
+    position:fixed;
+    width: 120px;
+    height: 200px;
+    background-color: brown;
+    text-align: center;
+    font-size: 25px;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.button3:hover{
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+.button4{
+    position: fixed;
+    width: 120px;
+    height:200px;
+    background-color: brown;
+    text-align: center;
+    font-size: 25px;
+    box-sizing: border-box;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.button4:hover{
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+.button5{
+    position: fixed;
+    width: 120px;
+    height: 200px;
+    background-color: brown;
+    text-align: center;
+    font-size: 25px;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.button5:hover{
+    background-color:bisque;
+    transition:0.5s;
+}
+
+
+.form_container{
+    position:absolute;
+    max-width: 320px;
+    height: 300px;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:101;
+    background: beige;
+    padding:25px; 
+    border-radius: 12px;  
+    
+}
+
+.form_close{
+    position: absolute;
+    top:10px;
+    right:20px;
+    color: black;
+    font-size:22px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.close-button {
+    display: block;
+}
+
+.form_container h2{
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input{
+    height:100%;
+    width:100; 
+    padding: 0 30px;
+}
+
+.input_box input:focus{
+    border-color: brown;
+}
+
+.input_box i{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+}
+
+.input_box i.email,
+.input_box i.password {
+    left:0;
+    color:gray;
+}
+
+.input_box input:focus ~ i.email{
+    border-color:brown; 
+}
+.input_box i.pw_hide {
+    right: 0;
+
+}
+
+.option_field{
+    margin-top:14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.form_container a {
+    color:black;
+    font-size: 12px;
+}
+
+.form_container a:hover{
+    text-decoration: underline;
+}
+
+.checkbox{
+    display:flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    cursor:pointer;
+}
+
+.checkbox_input{
+    accent-color: brown;
+}
+
+.checkbox_label{
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color:black;
+}
+
+.form_container .button{
+    background: bisque;
+    margin-top: 6px;
+    width: 100%;
+    padding:10px 0;
+    border-radius: 10px;
+    top:230px;
+    left: 20px;
+    font-size: 14px;
+    
+}
+
+.login_signup{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home.show.show.container{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.form_signup{ 
+    
+    background: beige;
+    max-width: 320px;
+    height: 300px;
+    padding: 25px;
+    z-index: 101;
+    border-radius: 12px;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+
+}
