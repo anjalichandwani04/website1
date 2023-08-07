@@ -18,38 +18,44 @@
     <section>
         <div class="button2">
             <div>
-                <button2><strong>FOOD</strong></button2>
+                <a href="./foodpage.html">
+                <button><strong>FOOD</strong></button> 
+                </a>              
             </div>
         </div>
         <div class="button2:hover"></div>
         <div class="button3">
             <div>
-                <button3><strong>TRAVEL</strong></button3>
+                <a href="./travel.html">
+                <button><strong>TRAVEL</strong></button>
+                </a>
             </div>
         </div>
         <div class="button3:hover"></div>
         <div class="button4">
             <div>
-                <button4><strong>THEATRE</strong></button4>
+                <a href="./theatre.html">
+                <button><strong>THEATRE</strong></button>
+                </a>
             </div>
         </div>
         <div class="button4:hover"></div>
         <div class="button5">
             <div>
-                <button5><strong>OTHER</strong></button5>
+                <a href="./other.html">
+                <button><strong>OTHER</strong></button>
+                </a>
             </div>
         </div>
         <div class="button5:hover"></div>
 
     </section>
     
-     <div class="loginbutton">        
-        <button class="loginbutton" id="login-butt" >Login</button>       
-    </div>
+    <div class="loginbutton">        
+        <button class="loginbutton" id="login-butt">Login</button>       
+    </div> 
 
-
-
-     <section class="login-popup" id="login-popup">
+     <section class="login-popup" id="login-popup"> 
         <div class="form_container">
             <div class="callout">
                 <button class="close-button" onclick = 'closeclick()' >
@@ -89,11 +95,14 @@
                    </div>
 
                                      
-                    <div class="signup-popup">
+                    <div class="signup-popup1">
                         <div class="callout">
                             <button class="close-button" onclick = 'opennew()' >
                               <span aria-hidden="true">&times;</span>
                             </button>
+                        </div>
+                        <i class="uil uil-times form_close"></i>
+                        <div class = "form_signup">
                             <form action="#">
                             <h2>Signup</h2>
         
@@ -128,32 +137,41 @@
                             <div class="login_signup">
                                 Already have an account? <a href="./login.html">Login</a>
                             </div> 
-
-             
-
+            
     <script >
         const loginButton = document.getElementById("login-butt");
         const loginPopup = document.getElementById("login-popup");
         
-
         loginButton.addEventListener("click", function () {
         loginPopup.style.visibility = "visible";
                
         });
 
-    
-
-        
-        function closeclick() {
-            loginPopup.style.visibility = "hidden";
-            loginButton.style.color = "red";
+        function openFoodpage() {
+        window.location.replace("foodpage.html");
         }
 
+        function openTravelpage() {
+        window.location.replace("travel.html");
+        }
+
+        function openTheatrepage() {
+        window.location.replace("theatre.html");
+        }
+
+        function windoOpen() {
+        window.location.replace("other.html");
+        }
+
+
+        
+             
+        function closeclick() {
+        loginPopup.style.visibility = "hidden";
+        loginButton.style.color = "red";
+        }
+               
      </script> 
-
-
-
-
     
 </body>
 </html>

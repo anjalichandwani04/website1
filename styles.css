@@ -20,6 +20,45 @@ h2{
     z-index: -1;        
 }
 
+.backgroundfood{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://img.rawpixel.com/private/static/images/website/2022-05/px1369813-image-kwvxxp91.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fffc03ba9aaa6a55c5e803700a96684b);
+    filter:blur(4px);
+    transform: scale(1.1);
+    z-index: -1;
+    background-size: cover;
+}
+
+.backgroundtravel{
+    position:fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-image: url(https://wallpapers.com/images/hd/brown-aesthetic-downtown-street-85czdjn8qstt5zal.jpg);
+    filter:blur(2px);
+    transform: scale(1.1);
+    z-index: -1;
+    background-size: cover;
+
+}
+
+.backgroundtheatre{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpapers.com/images/hd/aesthetic-movie-theater-photo-wo30du5ihb20qdu5.jpg);
+    filter: blur(4px);
+    transform: scale(1.1);
+    z-index: -1;
+    background-size: cover;
+}
 
 .login-popup{
     visibility: hidden;
@@ -41,29 +80,25 @@ h2{
     cursor: pointer;   
 }
 
-.signup-popup{
+.signup-popup1{
     visibility: hidden;
+}
+
+.signup-popup2{
+    visibility: visible;
 }
 
 .signupbutton{
     position: fixed;
-    background:transparent;
+    background:bisque;
     width: 100px;
     top:10px;
     right: 10px;
     font-size: 20px;
     padding: 10px;
-    color: black;
     float: right;
     text-align: center;
     cursor: pointer;
-}
-
-.signup-button{
-    background: bisque;
-    width: 200px;
-    padding: 10px;
-
 }
 
 
@@ -166,7 +201,13 @@ h2{
 
 }
 
-.close-button {
+.close-button2 {
+    display: block;
+    position: static;
+
+}
+
+.close-button1 {
     display: block;
 }
 
@@ -260,6 +301,18 @@ h2{
     
 }
 
+.signup-button{
+    background: bisque;
+    margin-top: 6px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    top: 230px;
+    left: 20px;
+    font-size: 14px;
+
+}
+
 .login_signup{
     font-size: 12px;
     text-align: center;
@@ -274,9 +327,10 @@ h2{
 
 .form_signup{ 
     
+    position: absolute;
     background: beige;
     max-width: 320px;
-    height: 300px;
+    height: 350px;
     padding: 25px;
     z-index: 101;
     border-radius: 12px;
@@ -284,4 +338,36 @@ h2{
     left: 50%;
     transform:translate(-50%,-50%) ;
 
+}
+
+.form_signup h2{
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.border1 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.border2 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.border3 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.border4 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+
+.h3 {
+    position: center;
+    color:black
 }
